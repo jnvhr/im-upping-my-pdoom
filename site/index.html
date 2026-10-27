@@ -397,7 +397,7 @@
     <header class="masthead">
       <div>
         <h1>P(doom) Music Video</h1>
-        <p>Every iteration of a lyric music video built entirely from Python code, directed by jnvhr with Hark Pro, from the first render to the v132 1080p 60fps master. Based on the project log.</p>
+        <p>Every iteration of a lyric music video built entirely from Python code, directed by jnvhr with Hark Pro, from the first render to the v132 1080p 60fps master. Based on the project log and the full process notes.</p>
         <div class="project-meta">Living devlog</div>
       </div>
       <div class="masthead-side">
@@ -411,7 +411,7 @@
       <aside class="sidebar" aria-label="Journey navigation">
         <label class="control" for="search">
           <span class="control-label">Search entries</span>
-          <input class="search" id="search" type="search" placeholder="Prompt, decision, file name" autocomplete="off" />
+          <input class="search" id="search" type="search" placeholder="Scene, decision, file name" autocomplete="off" />
         </label>
         <div class="control">
           <span class="control-label" id="order-label">Order</span>
@@ -434,18 +434,13 @@
     <span class="card-timestamp">2026-10-07 · 15:22</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
-      <p>The very first P(doom) video: a 2D engine (engine.py, scenes1.py, scenes2.py) driven by an audio analysis of the song, rendered to pdoom_video.mp4 (156.7 s).</p>
+      <p>The creative brief locked the look: gold #F5B420 on obsidian black, a blueprint feel, a big grotesque sans for the lyrics, monospace for the HUD, and a P(doom) counter that climbs from 0.01 to NaN. The song was split into 20 timestamped scenes, from the circuit iris to the C:\EARTH&gt; FORMAT COMPLETE ending.</p>
+      <p>The first cut was 2:36 at 1080p, with every scene built from scratch in code and locked to the beat grid. The on-screen lyric reads "foretold by Loom" because that's what is sung.</p>
       <dl class="meta-list">
         <dt>version</dt>
         <dd>v1</dd>
-        <dt>files</dt>
-        <dd>engine.py, scenes1.py, scenes2.py</dd>
       </dl>
     </div>
   </div>
@@ -476,13 +471,10 @@
     <span class="card-timestamp">2026-10-20 · 04:43</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
-      <p>true 3D engine cam3d.py, word-level alignment word_times.json.</p>
+      <p>Every word was re-timed against the vocals, and the scenes were rebuilt in real 3D (cam3d.py) with a camera that flies, orbits and dollies.</p>
+      <p>The camera rides the loss curve, flies inside the accelerator ring and through the safety fences, and banks into the sharp left turn. In the Chinese room it starts inside and whips from wall to wall. Gato stays as written.</p>
       <dl class="meta-list">
         <dt>version</dt>
         <dd>v2</dd>
@@ -502,17 +494,15 @@
 </section>
 <section class="journey-card" id="step-3">
   <div class="card-header">
-    <h2 class="card-title">3 · Scenes start on the first sung word</h2>
+    <h2 class="card-title">3 · Isolated vocals and a scene-by-scene rebuild</h2>
     <span class="card-timestamp">2026-10-20 · 07:24</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
-      <p>vocal stem snapping, T0 = first sung word; s4a/s4b/s4c scenes, render4.py.</p>
+      <p>Timing now comes from an isolated vocal track, so each line and its scene start when the word is sung and instrumentals stay clear. The beat zoom and grid floors were removed, with floating dust keeping the depth, and solid shaded models replaced wireframes.</p>
+      <p>Every scene on the list was rebuilt: its own nervous-eye shot, a solid mouth, 2D full-screen chorus typography that zooms back into 3D, a FOOM capability curve, a solid Chinese room with an operator, the Sydney cell, a coiled basilisk, a seven-robot safety council, a museum Von Neumann exhibit, the Gato cliff, a 3D paperclip room, separate Post-Chinchilla, fence and GPU scenes, robot hands building hands, the Ilya vault, a blackout and explosion on "show", a distinct scene for each P(doom) stage, and the TV-off, Regenerate and rewind ending.</p>
+      <p>Forward MLP had been 1.6 s late and Transformers 0.9 s early. Both now land on the vocal.</p>
       <dl class="meta-list">
         <dt>version</dt>
         <dd>v3</dd>
@@ -532,20 +522,16 @@
 </section>
 <section class="journey-card" id="step-4">
   <div class="card-header">
-    <h2 class="card-title">4 · Eye, boot console, shoggoth and the Chinese room</h2>
+    <h2 class="card-title">4 · Throne room and the ChatGPT timing</h2>
     <span class="card-timestamp">2026-10-20 · 07:24</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
-      <p>boot console, eye3 solid eye, continuous eye cam path (eye_keys), shoggoth+shinigami merge, Chinese room one move with box + shrooms, render4._xfade.</p>
+      <p>The nervous eye now uses the same iris and circuit-ring model as Sparks of AGI. "Now I'm your servant" got its own throne-room scene: a figure bows to a crowned AI that lights up on "boss". The mouth was rebuilt with rounded teeth, gums and lips and fades to black on the way in. ChatGPT had been landing 1.2 s late and now hits on the vocal.</p>
       <dl class="meta-list">
         <dt>version</dt>
-        <dd>v4-v13</dd>
+        <dd>v4</dd>
       </dl>
     </div>
   </div>
@@ -555,24 +541,254 @@
       <div class="result-card" onclick="openLightbox('media/v4.jpg')">
         <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
         <div class="image-wrapper"><img src="media/v4.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
-        <div class="result-caption">3.00 s</div>
+        <div class="result-caption">15.00 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-5">
+  <div class="card-header">
+    <h2 class="card-title">5 · A solid 3D boot console</h2>
+    <span class="card-timestamp">2026-10-20 · 07:24</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>The opening boot screen became a solid 3D console with thickness, gold edges and a stand. The camera swings to the side at the end to show its depth.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v5</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v5.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v5.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">2.00 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-6">
+  <div class="card-header">
+    <h2 class="card-title">6 · A new eye for Sparks and Nervous</h2>
+    <span class="card-timestamp">2026-10-20 · 08:40</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>One shared eye for both scenes: a solid eyeball with a glossy cornea, a gold circuit-fiber iris and real lids that open, blink and squint. It stares into the camera, darts on "nervous" and squints on "no surprise" before diving into the pupil. The nervous line no longer overlaps "that's no surprise".</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v6</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v6.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v6.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">4.00 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-7">
+  <div class="card-header">
+    <h2 class="card-title">7 · Eyelids that wrap the eyeball</h2>
+    <span class="card-timestamp">2026-10-20 · 08:40</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>The lids became one closed skin around the whole eyeball, with an almond-shaped opening whose corners meet, so the white can't show at the sides from any angle.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v7</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v7.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v7.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">5.00 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-8">
+  <div class="card-header">
+    <h2 class="card-title">8 · One continuous eye shot</h2>
+    <span class="card-timestamp">2026-10-20 · 08:40</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>From "I see sparks" through "circuits", "nervous" and the dive into the pupil, it is now one unbroken camera move on the same eye, with the background and HUD carrying straight through.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v8</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v8.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v8.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">6.00 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-9">
+  <div class="card-header">
+    <h2 class="card-title">9 · Shinigami eyes open on the shoggoth</h2>
+    <span class="card-timestamp">2026-10-20 · 09:04</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>The shinigami eyes no longer have their own scene. They open on the shoggoth right after the smiley mask flies off: tentacles form the lids, a third of the tentacles grow out of the eyes with gold pulses, and slit pupils widen on "eyes".</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v9</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v9.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v9.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">34.60 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-10">
+  <div class="card-header">
+    <h2 class="card-title">10 · The boot box becomes a monitor</h2>
+    <span class="card-timestamp">2026-10-20 · 09:56</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>The opening box was rebuilt as a proper monitor: a thick body, a gold-framed inset black screen holding all the text, a scan line, a blinking status light, a neck and a base.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v10</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v10.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v10.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">2.50 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-11">
+  <div class="card-header">
+    <h2 class="card-title">11 · Chinese room stabilized</h2>
+    <span class="card-timestamp">2026-10-20 · 09:56</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>The bag and shrooms now stay on the desk from every angle, the shelf books slide in and out at random, and a wider camera shows the whole room from 26.5 s to 30 s.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v11</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v11.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v11.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">27.50 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-12">
+  <div class="card-header">
+    <h2 class="card-title">12 · Chinese room in one move</h2>
+    <span class="card-timestamp">2026-10-20 · 10:28</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>The card slides in through the INPUT slot and out through OUTPUT, and the books shuffle fast. The bag rises out of the floor, shrooms sprout one by one, and gold roots creep between them. From 26.5 s it is all one camera move that sinks into the roots and dissolves into the shoggoth.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v12</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v12.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v12.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">28.00 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-13">
+  <div class="card-header">
+    <h2 class="card-title">13 · A real cardboard box</h2>
+    <span class="card-timestamp">2026-10-20 · 10:55</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>The shroom box became a proper open box: four walls, a dark inside, and one flap per side that folds outward as it rises from the floor and the shrooms sprout around it.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v13</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v13.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v13.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">28.60 s</div>
       </div>
     </div>
   </div>
 </section>
 <section class="journey-card" id="step-14">
   <div class="card-header">
-    <h2 class="card-title">14 · Bigger lyric layer</h2>
+    <h2 class="card-title">14 · Cropped lyrics fixed</h2>
     <span class="card-timestamp">2026-10-20 · 11:15</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
-      <p>lyric_layer canvas 5x font. Patch spans spliced onto base masters since then.</p>
+      <p>The text canvas was too short, so lyrics that wrapped onto three lines lost their tops and bottoms. The fix covers the servant, singularity, optimizing, "safe enough" and transformers lines, and "LOSS," keeps its comma.</p>
       <dl class="meta-list">
         <dt>version</dt>
         <dd>v14</dd>
@@ -585,27 +801,23 @@
       <div class="result-card" onclick="openLightbox('media/v14.jpg')">
         <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
         <div class="image-wrapper"><img src="media/v14.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
-        <div class="result-caption">20.00 s</div>
+        <div class="result-caption">10.00 s</div>
       </div>
     </div>
   </div>
 </section>
 <section class="journey-card" id="step-15">
   <div class="card-header">
-    <h2 class="card-title">15 · Mouth experiments and the throne room</h2>
+    <h2 class="card-title">15 · A face-on mouth that lip-syncs</h2>
     <span class="card-timestamp">2026-10-20 · 11:15</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
-      <p>mouth experiments; servant throne scene (side 3/4 view, plated colossus boss).</p>
+      <p>The mouth was rebuilt face-on with the teeth set behind the lips. It lip-syncs to the words instead of chomping on the beat, opens wide on the "A" of "alive", and the camera flies past A-L-I-V-E into a pure-black cave straight into "I'M".</p>
       <dl class="meta-list">
         <dt>version</dt>
-        <dd>v15-v17</dd>
+        <dd>v15</dd>
       </dl>
     </div>
   </div>
@@ -615,7 +827,59 @@
       <div class="result-card" onclick="openLightbox('media/v15.jpg')">
         <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
         <div class="image-wrapper"><img src="media/v15.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
-        <div class="result-caption">15.00 s</div>
+        <div class="result-caption">18.50 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-16">
+  <div class="card-header">
+    <h2 class="card-title">16 · Gums and teeth only</h2>
+    <span class="card-timestamp">2026-10-20 · 13:52</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>The face and lips are gone, leaving pink gums and white teeth. A-L-I-V-E line up one behind the other as the camera flies through, and six gold shrooms push up out of the open box.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v16</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v16.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v16.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">19.00 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-17">
+  <div class="card-header">
+    <h2 class="card-title">17 · The servant bows to the boss</h2>
+    <span class="card-timestamp">2026-10-20 · 14:27</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>The servant now faces the throne and bows, filmed from the side so the whole bow stays in view. The boss became a seated armoured giant with a pulsing gold core, a crowned helm and a tracking eye. The mouth does one Pac-Man chomp per sung syllable, then opens wide on "alive".</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v17</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v17.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v17.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">14.00 s</div>
       </div>
     </div>
   </div>
@@ -626,13 +890,9 @@
     <span class="card-timestamp">2026-10-20 · 14:45</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
-      <p>no beat pulsing on the eye (rule).</p>
+      <p>The pupil and its ring no longer pulse with the beat in Sparks of AGI or the nervous shot. This became a standing rule.</p>
       <dl class="meta-list">
         <dt>version</dt>
         <dd>v18</dd>
@@ -656,13 +916,9 @@
     <span class="card-timestamp">2026-10-20 · 14:45</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
-      <p>Sydney cell beat-quantized cam, enclosed cell.</p>
+      <p>The Sydney camera holds still and jumps closer on every beat instead of gliding in. The cell is fully enclosed, with side walls, a ceiling, corner posts and a caged lamp.</p>
       <dl class="meta-list">
         <dt>version</dt>
         <dd>v19</dd>
@@ -686,13 +942,9 @@
     <span class="card-timestamp">2026-10-20 · 17:16</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
-      <p>Forward 74.24 / MLP 74.76 via faster-whisper on vocals44 slices.</p>
+      <p>Speech detection on the isolated vocal showed "reckoned" held until 72.8 s and "Forward" landing at about 74.3 s, so the MLP scene had started 2 s early. It now cuts in on the word, and the council holds through the long "reckoned".</p>
       <dl class="meta-list">
         <dt>version</dt>
         <dd>v20</dd>
@@ -716,13 +968,9 @@
     <span class="card-timestamp">2026-10-20 · 17:16</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
-      <p>boot cam _center_on.</p>
+      <p>The boot camera re-aims every frame so the monitor stays dead centre through the whole zoom, from the first frame to the cut to the eye.</p>
       <dl class="meta-list">
         <dt>version</dt>
         <dd>v21</dd>
@@ -742,20 +990,16 @@
 </section>
 <section class="journey-card" id="step-22">
   <div class="card-header">
-    <h2 class="card-title">22 · The wireframe jaw is chosen</h2>
+    <h2 class="card-title">22 · Recovering the original mouth</h2>
     <span class="card-timestamp">2026-10-20 · 17:43</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
-      <p>wireframe jaw jaw2.s_jaw_wire (user's confirmed mouth). base23.</p>
+      <p>The triangular chomp went away and the earliest blocky mouth came back. Its code had been overwritten, so it was recovered from an old build. The white and gold box teeth on a gold gum ring were confirmed from screenshots before anything rendered.</p>
       <dl class="meta-list">
         <dt>version</dt>
-        <dd>v22-v23</dd>
+        <dd>v22</dd>
       </dl>
     </div>
   </div>
@@ -770,19 +1014,41 @@
     </div>
   </div>
 </section>
-<section class="journey-card" id="step-24">
+<section class="journey-card" id="step-23">
   <div class="card-header">
-    <h2 class="card-title">24 · Throat, ALIVE reveal, armoured eye shutters</h2>
-    <span class="card-timestamp">2026-10-20 · 20:26</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
+    <h2 class="card-title">23 · The wireframe jaw overhaul</h2>
+    <span class="card-timestamp">2026-10-20 · 20:22</span>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
-      <p>throat from back of tongue, ALIVE hidden until camera is inside; boss halo/eye/core fixes + raised-arm salute on 'boss'; realistic sweat in s_nervous; eye3 lids = armoured shutter plates (4 gunmetal plates/lid, gold trims, rivets, gold seal); whole eye rotates via eye3.gaze_xf; trailing caption commas stripped in lyrics.py. Spans A 54-680, B 792-1050, C 1156-1283, D 1348-1516, E 2854-2955. base24, pdoom_v24_web.mp4.</p>
+      <p>The confirmed mouth was overhauled, with stills approved first: real tooth shapes on a horseshoe arch with gold fangs, a hinged lower jaw that opens on each syllable, gold gum rails, a wire tongue, a wide open on "alive" and a dive inside.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v23</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v23.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v23.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">19.50 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-24">
+  <div class="card-header">
+    <h2 class="card-title">24 · Throat, ALIVE reveal and armoured eye shutters</h2>
+    <span class="card-timestamp">2026-10-20 · 20:26</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>A batch locked through stills before one render: the tongue leads into a throat where A-L-I-V-E appear only as the camera flies toward them; the boss halo and core were untangled and a stiff-arm salute added between "my" and "boss"; realistic sweat beads run down the nervous eye; the lids became armoured gunmetal shutter plates with gold trims and rivets; the whole eye turns to look around; and trailing caption commas were removed. A progress sheet came with it.</p>
       <dl class="meta-list">
         <dt>version</dt>
         <dd>v24</dd>
@@ -802,17 +1068,13 @@
 </section>
 <section class="journey-card" id="step-25">
   <div class="card-header">
-    <h2 class="card-title">25 · Jaw glide and the boss scan beam</h2>
+    <h2 class="card-title">25 · One solid eyeball and a smooth glide in</h2>
     <span class="card-timestamp">2026-10-21 · 06:17</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
-      <p>sclera also rotates with gaze_xf; boss head pitches down + eye drops + gold scan beam onto servant after bow (tsv+0.3..+0.85); jaw cam = one constant glide jaw2._sc(t,tA)=160+1300*(t-tA-0.1), keyed cam blends in over tA-1.25..tA-0.25, letters at s=380+260i shown only once _sc&gt;0, bigger GOLDL with glow; wide open tA-0.3..tA+0.1; black at tE-0.1. Render 54-680 (v25a 54-367, v25b 368-680) onto base24 -&gt; base25.</p>
+      <p>The white of the eye turns with the iris as one ball. The boss lowers its head and drops a gold gaze onto the servant after the bow. The camera glides into the mouth in one steady move past bigger, brighter A-L-I-V-E letters.</p>
       <dl class="meta-list">
         <dt>version</dt>
         <dd>v25</dd>
@@ -832,23 +1094,339 @@
 </section>
 <section class="journey-card" id="step-26">
   <div class="card-header">
-    <h2 class="card-title">26 · v26 to v38</h2>
-    <span class="card-timestamp">2026-10-21 · 15:36</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
+    <h2 class="card-title">26 · Only the eyeball turns</h2>
+    <span class="card-timestamp">2026-10-21 · 07:10</span>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
-      <p>These versions were made but the log has no entries for them. Backup files show the work touched the eye (eye3), the jaw (jaw2), the camera core (cam3d), the renderer (render4) and the scene files s3a, s4a, s4b and s4c, between 20 and 21 October 2026.</p>
+      <p>The armoured lids stay locked in place, and only the eyeball turns inside them, white and pupil together. At the start it tracks the camera, then darts around nervously on "nervous".</p>
       <dl class="meta-list">
-        <dt>versions</dt>
-        <dd>v26 to v38</dd>
-        <dt>source</dt>
-        <dd>Backup files only, no log text</dd>
+        <dt>version</dt>
+        <dd>v26</dd>
       </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v26.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v26.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">4.00 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-27">
+  <div class="card-header">
+    <h2 class="card-title">27 · Tongue and throat as one piece</h2>
+    <span class="card-timestamp">2026-10-21 · 07:59</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>The tongue's white wire grid now runs straight down into the throat and is visible from the start, instead of a separate tunnel switching on. The mouth opens wide first, then the camera makes one steady glide over the tongue and down the throat.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v27</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v27.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v27.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">21.00 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-28">
+  <div class="card-header">
+    <h2 class="card-title">28 · The angled opening, eye turned toward camera</h2>
+    <span class="card-timestamp">2026-10-21 · 08:26</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>Turning the whole eye had cancelled the angled start, so the lids went back and two options were offered. B was chosen and pushed further: it opens on the original angle with the lids fixed, and the eyeball turns about three quarters of the way to the camera.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v28</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v28.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v28.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">3.00 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-29">
+  <div class="card-header">
+    <h2 class="card-title">29 · Straight in between the teeth</h2>
+    <span class="card-timestamp">2026-10-21 · 08:26</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>The camera now comes in head-on and flies between the teeth, over the tongue and down the throat. The throat is there from the first frame, and ALIVE simply appears once the mouth opens wide.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v29</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v29.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v29.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">21.60 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-30">
+  <div class="card-header">
+    <h2 class="card-title">30 · ALIVE wraps around the throat</h2>
+    <span class="card-timestamp">2026-10-21 · 09:08</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>A-L-I-V-E wrap around the throat wall in a circle, and the camera rolls with each letter so it reads upright, making one full barrel roll. The letters stay hidden until the camera passes the teeth, then fade in over about 0.15 s.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v30</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v30.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v30.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">21.70 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-31">
+  <div class="card-header">
+    <h2 class="card-title">31 · ALIVE back in the caption</h2>
+    <span class="card-timestamp">2026-10-21 · 09:37</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>The throat letters were removed and ALIVE sits in the caption in gold. The fly-in through the teeth and down the throat stays.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v31</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v31.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v31.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">21.80 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-32">
+  <div class="card-header">
+    <h2 class="card-title">32 · A caption pinned in 3D above the mouth</h2>
+    <span class="card-timestamp">2026-10-21 · 15:34</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>The caption hangs in 3D space above the teeth with ME centred, and the camera swoops under it into the mouth while it stays put. ALIVE appears across the throat opening on the word at 21.5 s.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v32</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v32.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v32.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">21.50 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-33">
+  <div class="card-header">
+    <h2 class="card-title">33 · Every caption pinned in 3D</h2>
+    <span class="card-timestamp">2026-10-21 · 17:41</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>ALIVE was removed and the throat fades fully to black before "I'M". Every caption was pinned in 3D and moved into a band at the top or bottom of the frame, clear of the action, with a contact sheet checked before the full render.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v33</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v33.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v33.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">45.00 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-34">
+  <div class="card-header">
+    <h2 class="card-title">34 · Captions reverted</h2>
+    <span class="card-timestamp">2026-10-21 · 18:14</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>The 3D caption pass was undone and captions went back to how they were in v32. ALIVE stays removed and the throat still fades to black into "I'M".</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v34</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v34.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v34.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">45.00 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-35">
+  <div class="card-header">
+    <h2 class="card-title">35 · AND on time</h2>
+    <span class="card-timestamp">2026-10-21 · 18:31</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>"AND" was popping in about 0.4 s early at 14.44 s. It now lands at 14.82 s, when it's sung.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v35</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v35.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v35.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">14.90 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-36">
+  <div class="card-header">
+    <h2 class="card-title">36 · FOOM on time</h2>
+    <span class="card-timestamp">2026-10-21 · 21:42</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>FOOM was landing 0.3 s late at 26.02 s. The caption and the big gold burst now hit at 25.72 s, on the vocal.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v36</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v36.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v36.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">25.80 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-37">
+  <div class="card-header">
+    <h2 class="card-title">37 · FOOM inside the same shot</h2>
+    <span class="card-timestamp">2026-10-21 · 21:42</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>On FOOM the camera used to swing to a new angle under a big gold flash, which read like a cut. Now it explodes inside the same shot: the capability line stays in view, the camera drifts back a little, and the flash is a soft glow.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v37</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v37.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v37.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">25.90 s</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-card" id="step-38">
+  <div class="card-header">
+    <h2 class="card-title">38 · Four creative chorus exits</h2>
+    <span class="card-timestamp">2026-10-21 · 23:36</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>FOOM left the caption, since the scene already shows it. Inspired by a reference video's hard cuts, echo trails and purposeful letters (without copying it), each P(DOOM) chorus got its own exit: diving through the O, slicing into blinds, letters falling with gold echo trails, and a flipping-tile wave.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v38</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v38.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v38.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">24.30 s</div>
+      </div>
     </div>
   </div>
 </section>
@@ -856,10 +1434,6 @@
   <div class="card-header">
     <h2 class="card-title">39 · Captions moved off the subjects</h2>
     <span class="card-timestamp">2026-10-22 · 01:04</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -876,10 +1450,6 @@
   <div class="card-header">
     <h2 class="card-title">40 · Smooth portal into FOOM</h2>
     <span class="card-timestamp">2026-10-22 · 05:09</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -908,10 +1478,6 @@
     <span class="card-timestamp">2026-10-22 · 05:09</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Shroom box see-through bug fixed (s4a): in-box shroom stems now start at the rim (were drawing through box walls), spores occluded by box culled via _seg_hits_box. Frames 820-914 re-rendered (out4/v41/a,b). base41.mp4 4701 frames, clean timestamps. Backup s4a_v40.py.</p>
@@ -936,10 +1502,6 @@
   <div class="card-header">
     <h2 class="card-title">42 · Captions stop gliding</h2>
     <span class="card-timestamp">2026-10-22 · 08:38</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -968,10 +1530,6 @@
     <span class="card-timestamp">2026-10-22 · 09:28</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Room -&gt; shoggoth transition: crossfade (xfade 0.6) replaced. s4a: mask_slide_in (smiley slides in from right over last 0.42 s of room, gold echo outlines, covers frame at M_R=1300) and in s_shoggoth4 the mask is drawn 2D, log-shrinking over M_DOWN=0.62 s and morphing onto its exact projected 3D shape, then the 3D mask takes over. Drawn via new g.late hook in render4.raw (after captions, before HUD). Frames 885-925 (out4/v43). Sheet cmp/mask43.jpg. Backup s4a_v42.py.</p>
@@ -996,10 +1554,6 @@
   <div class="card-header">
     <h2 class="card-title">44 · Shinigami eyes overhaul</h2>
     <span class="card-timestamp">2026-10-22 · 09:53</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1028,10 +1582,6 @@
     <span class="card-timestamp">2026-10-22 · 09:53</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Shinigami eye lids/covers removed at user request (s4a.SHINI_LIDS=[False]; _shini_eye2 returns before the lid code). Bare eyeball + gold iris following the camera. Frames 995-1161 (out4/v45). Sheet cmp/shini45.jpg. Backup s4a_v44.py.</p>
@@ -1056,10 +1606,6 @@
   <div class="card-header">
     <h2 class="card-title">46 · Lids back, only the grey removed</h2>
     <span class="card-timestamp">2026-10-22 · 10:29</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1088,10 +1634,6 @@
     <span class="card-timestamp">2026-10-22 · 12:19</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Shinigami eyes: ONLY the gold almond rim (+studs, tear line) and the iris. Grey ball, lid cover fill and armour plates removed entirely (user: "remove, not make black"). Iris clipped to the almond in screen space via s4a._ClipG proxy canvas. Frames 995-1161 from base44 (out4/v47, out4/r47.sh). base47.mp4, pdoom_v47_web.mp4. Sheet cmp/shini47.jpg. Backup s4a_v46.py.</p>
@@ -1116,10 +1658,6 @@
   <div class="card-header">
     <h2 class="card-title">48 · Mouth camera crosses the teeth on ALIVE</h2>
     <span class="card-timestamp">2026-10-22 · 12:57</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1148,10 +1686,6 @@
     <span class="card-timestamp">2026-10-22 · 13:53</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>(1) Mouth back-and-forth fixed: the camera path (campos) was computed with the live jaw angle, so each syllable chomp moved the camera in/out. It now uses the fixed wide-open angle 0.62. jaw2._sc is one monotone power-curve push from 19.3 s (s0=-1790) into the 1450/s glide at tA-0.2, and the lips are crossed at 21.5 s (ALIVE). (2) Caption stutter: the v42 stable-pivot fix is now baked into the whole video: 0-790, 914-995 and 1161-4260 were re-rendered (out4/v49 chunks, chunks.txt, loop.sh, splice.sh; ffmpeg in while-read loops needs -nostdin). base49.mp4, pdoom_v49_web.mp4. Backup jaw2_v48.py.</p>
@@ -1176,10 +1710,6 @@
   <div class="card-header">
     <h2 class="card-title">50 · Singularity's on its sung onset</h2>
     <span class="card-timestamp">2026-10-22 · 14:08</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1208,10 +1738,6 @@
     <span class="card-timestamp">2026-10-22 · 16:05</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>ACCELERATING (s3b): _phi gets +0.9*(t-_TACC)^2 from _TACC=47.46, so the bunch and the chase cam reach ~3x speed by 49.3. _streaks() adds 260 world-space light streaks (white, every 5th gold) outside the tube, with length proportional to speed, plus short motion trails on the lead particles (capped at 0.06 rad so they don't reach the camera). Frames 1420-1480 re-rendered (out4/v51). base51.mp4, pdoom_v51_web.mp4. Backup s3b_v50.py. Sheet cmp/acc51.jpg.</p>
@@ -1236,10 +1762,6 @@
   <div class="card-header">
     <h2 class="card-title">52 · Rearranging on time</h2>
     <span class="card-timestamp">2026-10-22 · 16:22</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1268,10 +1790,6 @@
     <span class="card-timestamp">2026-10-22 · 16:45</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>User: put line 15 caption back to centred (as before) but at the BOTTOM instead of top. capfix39 "15" = [0, 112, 0.8] (full size 1.0 ran past the bottom HUD). Backup capfix39_v52.json (left-gutter version). Frames 1478-1602 re-rendered (out4/v53). base53.mp4, pdoom_v53_web.mp4.</p>
@@ -1292,14 +1810,36 @@
     </div>
   </div>
 </section>
+<section class="journey-card" id="step-54">
+  <div class="card-header">
+    <h2 class="card-title">54 · Fang slashes and a living basilisk</h2>
+    <span class="card-timestamp">2026-10-22 · 17:08</span>
+  </div>
+  <div class="field-group">
+    <div class="field-label">LOG ENTRY</div>
+    <div class="decision-content">
+      <p>Three white-hot fang slashes rip the second P(DOOM) card, and the shards split apart onto the basilisk. The serpent was rebuilt with banded scales, a crown, slit eyes, sliding coils and a swaying neck, and on BOOM its hood flares and it strikes at the camera.</p>
+      <dl class="meta-list">
+        <dt>version</dt>
+        <dd>v54</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field-group">
+    <div class="field-label">RESULTS - click to enlarge</div>
+    <div class="results-grid">
+      <div class="result-card" onclick="openLightbox('media/v54.jpg')">
+        <div class="result-header"><span>Scene as of v98 (nearest saved render)</span><button class="view-btn" type="button">VIEW</button></div>
+        <div class="image-wrapper"><img src="media/v54.jpg" alt="Scene as of v98 (nearest saved render)" loading="lazy" /></div>
+        <div class="result-caption">61.00 s</div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="journey-card" id="step-55">
   <div class="card-header">
     <h2 class="card-title">55 · The snake becomes a cobra</h2>
     <span class="card-timestamp">2026-10-22 · 17:31</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1328,10 +1868,6 @@
     <span class="card-timestamp">2026-10-22 · 17:48</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>The user still found the v55 cobra ugly and asked for a full overhaul of the basilisk scene. New module cobra.py is a sculpted cobra: the spine is a loose stacked coil plus a Bezier neck, with parallel-transport frames, and neck_frames turns the belly toward the head's forward direction. The body is a 30-sided loaf section with glossy black and cream king-cobra chevron bands, using sampled anti-aliased colour, spec and a gold fresnel rim. The hood is a cupped spade sheet, hp(u,v), with the neck volume bulged into its front; tube faces are hidden inside it. It has ventral scute lines, two chevron throat bars as lifted strips, a spectacle mark on the back and a gold rim edge. The head is a parametric flat-topped wedge with a hinged lower jaw, side eyes with slits, nostrils, triangle fangs and a forked tongue. The scene (s4b.s_basilisk; old versions kept as s_basilisk_v55/_v54; backup s4b_v55.py) has a low-angle camera, a gold halo behind the hood, a faint giant ROKO'S BASILISK backdrop and floor rings. The cobra rises, the hood flares, then it sways (0.8 Hz) with tongue flicks. It rears back before BOOM, lunges forward/down with the mouth open on BOOM, then recoils. Frames 1815-1880 spliced onto base55 -&gt; base56, pdoom_v56_web.mp4 (4701 frames). Sheets cmp/cobra56.jpg, cmp/cobra_turn.jpg.</p>
@@ -1356,10 +1892,6 @@
   <div class="card-header">
     <h2 class="card-title">57 · Cobra skin and fangs</h2>
     <span class="card-timestamp">2026-10-22 · 18:02</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1388,10 +1920,6 @@
     <span class="card-timestamp">2026-10-22 · 18:34</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>The user said the head still looked separate and asked for a detailed mouth interior with a tongue. In s4b the head pitch is -0.38*(1-st), so the head tips down into the hood and the top of the head shows from the low camera. In cobra.py (backup cobra_v57.py): a neck-to-skull bridge loft (neck ring -&gt; head x=0 profile); a chin-to-hood throat loft when the mouth is closed; gular lines on the lower jaw; no dark spots near the hood centre; no pale glint on the snout tip; smaller, more lateral eyes; jaw open angle 0.5. New _mouth(): dark throat opening, shaded palate with folds and a groove, gums, 4 rows of small teeth, a trough floor, glottis, a rounded red forked tongue with a crease and black prongs, fang sheaths. Frames 1815-1880 on base57 -&gt; out4/base58.mp4, pdoom_v58_web.mp4 (4701 frames). Sheet cmp/cobra58.jpg.</p>
@@ -1416,10 +1944,6 @@
   <div class="card-header">
     <h2 class="card-title">59 · Sydney caption stops jumping</h2>
     <span class="card-timestamp">2026-10-22 · 19:04</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1448,10 +1972,6 @@
     <span class="card-timestamp">2026-10-22 · 19:17</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>End-of-shinigami-scene flashes: the half-beat strobe from 35.7 s (0.25*pulse(t,2,8)*uq) replaced by three flashes on the last three beats before tE=38.64 (beats at 37.519, 37.973, 38.428 s; frames 1126, 1140, 1153), each 0.28*exp(-14*dt), GOLDL. The eye-opening flash at 34.6 is unchanged. Frames 1068-1159 rendered (out4/v60/c1068.mp4) and spliced onto pdoom_v59_web.mp4 (no base master was in the zip) -&gt; pdoom_v60_web.mp4, 4701 frames. Also: core.py FONT paths made relative (../fonts), feat.npz regenerated from song.mp3 with analyze.py's feature code (tempo.json kept). Backup s4a_v59.py.</p>
@@ -1476,10 +1996,6 @@
   <div class="card-header">
     <h2 class="card-title">61 · Flashes moved to the snare fill</h2>
     <span class="card-timestamp">2026-10-22 · 19:27</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1508,10 +2024,6 @@
     <span class="card-timestamp">2026-10-22 · 19:47</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>User: remove the end-of-shinigami-scene flash entirely (after v60/v61 timing attempts missed). All flashes from 35.7 s to the cut removed; the eye-opening flash at 34.6 s is kept. Frames 1068-1159 (out4/v60/c1068_v62.mp4) spliced onto pdoom_v59_web.mp4 -&gt; pdoom_v62_web.mp4 (4701 frames). Backup s4a_v61.py (snare-flash version).</p>
@@ -1536,10 +2048,6 @@
   <div class="card-header">
     <h2 class="card-title">63 · Eye-opening flash removed</h2>
     <span class="card-timestamp">2026-10-22 · 19:58</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1568,10 +2076,6 @@
     <span class="card-timestamp">2026-10-22 · 20:29</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Chinese room INPUT/OUTPUT labels were floating billboards (text3). room_shell now maps them flat onto the wall planes (word3, width 300, centred above each slot at y=150; left wall right-vector (0,0,1), right wall (0,0,-1)). Frames 796-903 (out4/v60/c0796_v64.mp4) + 1030-1159 (c1030_v63.mp4) spliced onto pdoom_v59_web.mp4 -&gt; pdoom_v64_web.mp4 (4701 frames). Backup s4a_v63.py. Sheet st4/room64.jpg. Note: pip packages may vanish between runs; reinstall numpy pillow scipy aggdraw.</p>
@@ -1596,10 +2100,6 @@
   <div class="card-header">
     <h2 class="card-title">65 · Smaller wall labels</h2>
     <span class="card-timestamp">2026-10-22 · 20:46</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1628,10 +2128,6 @@
     <span class="card-timestamp">2026-10-22 · 21:09</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Omega tunnel (s3b.s_omega, scene 64.21-66.61 s) was animated only to 66.3, so frames ~1990-1998 froze before the FLOPS cut. Camera push, fov and the gold flash now run to tE = T0(21)-0.01 (z -1000 -&gt; 5600, ei). Frames 1920-1999 (out4/v60/c1920_v66.mp4) + chunks c0796_v65, c1030_v63 on pdoom_v59_web.mp4 -&gt; pdoom_v66_web.mp4 (4701 frames). Frame-diff check: no frozen frames to the cut. Backup s3b_v65.py.</p>
@@ -1656,10 +2152,6 @@
   <div class="card-header">
     <h2 class="card-title">67 · Council table fixed</h2>
     <span class="card-timestamp">2026-10-22 · 21:21</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1688,10 +2180,6 @@
     <span class="card-timestamp">2026-10-22 · 22:04</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>MLP scene (s4b.s_mlp, 74.22-77.73 s): lyrics covered the network. Network moved down (NY=170), node spacing 150-&gt;125, labels/EPOCH shifted with it, camera kept wider (orbit 2300/2200/2050/1950, was 2400..1500), look target slightly above network. Captions unchanged. Chunk out4/v60/c2224_v68.mp4 (2224-2333; c2090_v67 now used only for 2090-2223). Backup s4b_v67.py.</p>
@@ -1716,10 +2204,6 @@
   <div class="card-header">
     <h2 class="card-title">69 · OBSOLETE stamp removed</h2>
     <span class="card-timestamp">2026-10-22 · 23:58</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1748,10 +2232,6 @@
     <span class="card-timestamp">2026-10-23 · 00:19</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Servant &amp; Boss scene (s4b.s_servant, 13.18-16.66 s). Boss overhauled into an armoured colossus (same skeleton/poses: salute, head lowers, eye tracks): pelvis + gold belt, tasset, segmented abdomen, hexagonal V-chest with angled breastplate and gold keel, gorget, three-layer pauldrons with gold rim rings, faceted upper arms, elbow cops, flared gauntlets with gold bands, segmented fingers, thigh plates, knee guards with gold band, greaves, pointed sabatons; helm: low-poly dome, visor brow with gold edge, cheek plates, jaw guard, crown blades. Removed g.flash and the white burst on 'boss' (luma flat). Chunk out4/v60/c0392_v70.mp4 (392-501). Backup s4b_v69.py.</p>
@@ -1776,10 +2256,6 @@
   <div class="card-header">
     <h2 class="card-title">71 · Boss armour glitches fixed</h2>
     <span class="card-timestamp">2026-10-23 · 00:36</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1808,10 +2284,6 @@
     <span class="card-timestamp">2026-10-23 · 00:52</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Sharp left turn overhaul (81.23-89.99 s): new s_turn in s4b.py (shadows the s3b import). Solid asphalt road with lane dashes, gold edges, guardrail with reflectors, headlight pools; speed curve brakes hard into the hairpin; gold diamond warning sign + 10 chevron boards that brighten as the car passes; camera tilts up after the bend. Entity = faceted grey sphere with gold seams, 3 orbit rings and particle halo, grows/rises on "there you are", gold eye opens on "are". CDR checklist moved onto a highway gantry sign the car drives toward; items struck through on "CDR", then "STATUS: SHIPPED ANYWAY". Chunk out4/v60/c2437_v72.mp4 (2437-2699); VN chunk c2394_v69 trimmed to 43 frames. Backup s4b_v71.py.</p>
@@ -1836,10 +2308,6 @@
   <div class="card-header">
     <h2 class="card-title">73 · The eye at the end of the road</h2>
     <span class="card-timestamp">2026-10-23 · 01:02</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1868,10 +2336,6 @@
     <span class="card-timestamp">2026-10-23 · 04:31</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Sharp left turn: the entity is now the shoggoth from "shoggoth's lies" (eye-owned tentacles with gold pulses + core point cloud) with its two shinigami eyes (s4a._shini_eye2), via s4b._shoggoth_body drawn through the local-frame camera (scale k=3.6, grows/rises on "there you are", eyes widen on "are"). No 死神 kanji / SHINIGAMI.EXE labels. Only CDR line struck. Chunk out4/v60/c2437_v74.mp4 (2437-2699). Backup s4b_v73.py.</p>
@@ -1896,10 +2360,6 @@
   <div class="card-header">
     <h2 class="card-title">75 · Predator-style cloak</h2>
     <span class="card-timestamp">2026-10-23 · 04:59</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1928,10 +2388,6 @@
     <span class="card-timestamp">2026-10-23 · 05:11</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Sharp left turn decloak: soft quick fade (~0.55 s, per-pixel smoothstep with slight right-to-left lead and grain; gold band x0.6) instead of the hard wipe. Shoggoth moved to the right road edge just past the guardrail at the far end: _TURN_ENT=(-5600,-470,3950), _TURN_K=1.45, halo radius scaled to k. Decloak starts at _turn_tpoint() = heading within 4 deg (~82.75 s). Chunk out4/v60/c2437_v76.mp4 (2437-2699). Backup s4b_v75.py.</p>
@@ -1956,10 +2412,6 @@
   <div class="card-header">
     <h2 class="card-title">77 · Entity back to the centre, further away</h2>
     <span class="card-timestamp">2026-10-23 · 05:29</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -1988,10 +2440,6 @@
     <span class="card-timestamp">2026-10-23 · 05:41</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>User: revert entity to its previous (v76) scale. _TURN_K=1.45, kept v77 centred far spot, y lowered to -470: _TURN_ENT=(-7600,-470,3100). Soft fade unchanged. Chunk out4/v60/c2437_v78.mp4 (2437-2699). Backup s4b_v77.py. 4701 frames verified.</p>
@@ -2016,10 +2464,6 @@
   <div class="card-header">
     <h2 class="card-title">79 · Back to the road edge</h2>
     <span class="card-timestamp">2026-10-23 · 06:16</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -2048,10 +2492,6 @@
     <span class="card-timestamp">2026-10-23 · 07:02</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>User picked v74's position from a comparison of v74-v78: _TURN_ENT=(-6400,-380,3100) (centre of the road end, under the gantry), kept the smaller v76 scale k=1.45 and the soft fade/cloak. Chunk out4/v60/c2437_v80.mp4. Backup s4b_v79.py (= v76). 4701 frames verified.</p>
@@ -2076,10 +2516,6 @@
   <div class="card-header">
     <h2 class="card-title">81 · v74's size too</h2>
     <span class="card-timestamp">2026-10-23 · 07:16</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -2108,10 +2544,6 @@
     <span class="card-timestamp">2026-10-23 · 07:32</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Gato scene started late: "Gato" is sung at 89.35 s (vocal envelope + asr_voc "God," 89.26), word_times had 90.0. word_times.json line 27: Gato 89.36-90.6, please 90.74-91.3 (backup word_times_v81.json). T0(27) now 89.34 so s_turn ends and s_gato starts at 89.33 (frame 2680); caption follows. Re-rendered 2437-2857 as out4/v60/c2437_v82.mp4 (turn + gato); splice base from 2858. 4701 frames verified.</p>
@@ -2136,10 +2568,6 @@
   <div class="card-header">
     <h2 class="card-title">83 · Tentacles stay behind the guardrail</h2>
     <span class="card-timestamp">2026-10-23 · 09:08</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -2168,10 +2596,6 @@
     <span class="card-timestamp">2026-10-23 · 10:02</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Gato scene (2680-2857) moved onto the roof of a gold NVDA tower: wireframe NVDA chart-city below (ground y=7200), ticker line, wireframe moon, lit window strips, gold parapet, rooftop "NVDA ▲" billboard. Gato overhauled into a robot cat (CFaces): plated chassis + back plate, 4 jointed legs, visor head with gold eye bars and pyramid ears, token-block tail, shoulder turret + articulated arm + 3-finger gripper; task labels (ATARI/ROBOTICS/CAPTION/CHAT) on the flank facing camera. Fall camera target down to 3400. Chunk out4/v60/c2680_v84.mp4 (178 frames); turn = c2437_v83 (243 frames). Backup s4b_v83.py. Encode to /tmp then copy (direct write to workspace hit an I/O error once).</p>
@@ -2196,10 +2620,6 @@
   <div class="card-header">
     <h2 class="card-title">85 · Gato is not a cat</h2>
     <span class="card-timestamp">2026-10-23 · 11:06</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -2228,10 +2648,6 @@
     <span class="card-timestamp">2026-10-23 · 11:21</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Chinese room operator overhauled (s4a.room_contents): human figure (hair cap + back hair, face with eyes/brows/nose/mouth, ears, collared shirt, belt + gold buckle, trousers, shoes, jointed arms, palms with 4 fingers + thumb, gold pen in right hand), office chair (5-star base, gas column, seat, backrest, armrests), drawer block, in/out card trays. OPERATOR label raised to y -175. Frames 796-903 -&gt; out4/v60/c0796_v86.mp4 (replaces c0796_v65). Backup s4a_v85.py.</p>
@@ -2256,10 +2672,6 @@
   <div class="card-header">
     <h2 class="card-title">87 · One shared person model</h2>
     <span class="card-timestamp">2026-10-23 · 11:42</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -2288,10 +2700,6 @@
     <span class="card-timestamp">2026-10-23 · 11:48</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Paperclip room (s4b.s_clips) overhauled: office room (tiled floor, panelled walls, baseboards, ceiling light strips), wall counter "CLIPS PRODUCED" + "OBJECTIVE: MAXIMIZE // HALT: DISABLED", desk + monitor with rising curve + keyboard + office chair, person (person.py) whose arms rise as they're buried, clip machine in the back-right corner (cabinet, rotating wire spool, feed wire, bender head with oscillating arm, chute) pouring clips, heightfield heap (22x22) rising over time with a mound under the chute, 330 proper gem-clip tubes (GEM path) on the surface, plus falling/spraying clips; near-camera clips culled. Chunk c2906_v88 (2906-2974). Splice script saved as splice_v88.sh (20+2 segments). Backup s4b_v87.py.</p>
@@ -2316,10 +2724,6 @@
   <div class="card-header">
     <h2 class="card-title">89 · Paperclip arms fixed</h2>
     <span class="card-timestamp">2026-10-23 · 11:59</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -2348,10 +2752,6 @@
     <span class="card-timestamp">2026-10-23 · 12:06</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>PTO/killswitch (s3b.s_kill) lines 30/31: screen-locked on a smooth no-punch cam at top (camc.u -330, depth 20); line 30 hold=0 so it clears before 31 (they overlapped and clipped). Was-it-all-for-show (s3c puppet) line 45: screen-locked at bottom (camc.u +340); camera keys retimed so it reaches the control bar/OPERATOR by 139.7 (old final key 141.45 was after the cut); removed serif 'it was always a show' word3. capfix39.json entries 30,31,45 reset to (0,0,1) (backup capfix39_v89.json); capfix offsets override screen placement, check them when moving captions. Chunks c2975_v90 (2975-3074), c4120_v90 (4120-4209, replaces c4120_v87). splice_v90.sh. Backups s3b_v89.py s3c_v89.py.</p>
@@ -2376,10 +2776,6 @@
   <div class="card-header">
     <h2 class="card-title">91 · PTO cubicle overhaul</h2>
     <span class="card-timestamp">2026-10-23 · 13:13</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -2408,10 +2804,6 @@
     <span class="card-timestamp">2026-10-23 · 13:41</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>PTO overhead fix: cubicles drawn as separate CFaces sets far-&gt;near, then centre cubicle, then desk set (single painter list mis-sorted the 1700-tall walls). Walls = stacked shaded bands (darker at floor) with edge seams. Screen text / calendar / notes fade by viewing angle (fac) so they don't smear edge-on. Chunk c2975_v92 replaces c2975_v91. Backup s4b_v91.py.</p>
@@ -2436,10 +2828,6 @@
   <div class="card-header">
     <h2 class="card-title">93 · Fuse follows the sung melisma</h2>
     <span class="card-timestamp">2026-10-23 · 13:46</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -2467,10 +2855,6 @@
   <div class="card-header">
     <h2 class="card-title">94 · Blues on its onset</h2>
     <span class="card-timestamp">2026-10-23 · 14:45</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -2502,10 +2886,6 @@
     <span class="card-timestamp">2026-10-23 · 15:11</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Transformers overhaul: gears95.py s_gears (imported in s4c, overrides s3c). Same orbit-climb camera. Solid shaded CFaces blocks with lit edges, gold residual rail + skip arcs + tokens flowing up. Sung stutter printed on block faces (user's words): JUST 110.20, TRANS 110.68, TRANSFORMER 111.14, TRANSFORMERS 111.60, TRANSFORMERS 112.00, ALL/THE/WAY!; then line 35 TILL/YOU/LEARNED/TO on blocks (no flat caption for 34/35). DISOBEY printed on breakaway block that slides out camera-right and rides up beside the stack, leaving a hole.</p>
@@ -2531,10 +2911,6 @@
   <div class="card-header">
     <h2 class="card-title">96 · Killswitch on time</h2>
     <span class="card-timestamp">2026-10-23 · 17:38</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -2565,10 +2941,6 @@
     <span class="card-timestamp">2026-10-23 · 17:48</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Post-Chinchilla scene was late: word time 115.40 got snapped (lyrics._snap) to 115.54, while 'Post' is sung ~115.14-115.25. word_times Post-Chinchilla -&gt; 115.22 (snaps to 115.31 = T0(36)); s_dense TL cut now T0(36)-0.08 = 115.21. NOTE: T0/LINES come from lyrics.py rebuilt from word_times via _snap (vocal-onset snap), so check T0() after editing word_times.</p>
@@ -2594,10 +2966,6 @@
   <div class="card-header">
     <h2 class="card-title">98 · Particles morph into the gold cube</h2>
     <span class="card-timestamp">2026-10-23 · 18:20</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">Earlier session (prompt not kept in this project)</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -2627,10 +2995,6 @@
     <span class="card-timestamp">2026-10-23 · 18:25</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">continue this project I want you to fix the posts chinchilla like the particles transition to a yellow cube, the yellow cube is not yet seen cause it is already next scene, fix it so that it can be seen even for just a little moment but not too long to avoid dead air</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Post-Chinchilla gold cube was never seen solid: fill finished at tsd+0.75 = 117.15, after the cut to fences (T0(37)-0.01 = 117.13). s_dense retimed (s4c.py, backup s4c_v98.py): particle flight tsd-0.38+d .. tsd+0.12+d, CY lift tsd-0.35..tsd+0.2, counter tsd-0.2..tsd+0.3, fill tsd+0.08..tsd+0.33. Solid cube holds ~116.73-117.13 (~12 frames) with a lock-in pop (scale +7% decaying) and gold flare so the hold isn't dead air. Fences cut unchanged.</p>
@@ -2656,10 +3020,6 @@
   <div class="card-header">
     <h2 class="card-title">100 · Faster particles, longer cube</h2>
     <span class="card-timestamp">2026-10-23 · 18:44</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">the particles are still taking too long before it transitions to yellow cube making it resulting to the yellow cube having little to no screen time, fix it</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -2689,10 +3049,6 @@
     <span class="card-timestamp">2026-10-23 · 20:23</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">the TRANS in transformers scene should be TRANS- + instead of moving up continously, make it go up base on the beats like up every beat</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Transformers (gears95.py, backup gears95_v100.py): 'TRANS' token now 'TRANS-'. The climb is beat-stepped instead of continuous: _climb() snaps up 900*beat (~409 px) on each beat from the tempo.json grid (132 bpm, phase 0.2462, so beats land at 110.25, 110.70, 111.15, 111.61, 112.06...), with a 0.2 s cubic ease-out, then holds. The orbit angle stays continuous. The DISOBEY breakaway ride follows _climb so it keeps pace. SLOTS shift by up to +2 because they come from _eye.</p>
@@ -2718,10 +3074,6 @@
   <div class="card-header">
     <h2 class="card-title">102 · Subtle beat shake</h2>
     <span class="card-timestamp">2026-10-23 · 20:26</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">make sure each beat like there is a little bit of camera beat oscilate shake, not so much, just so that there is an effect to make it look good and not just camera movement going up</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -2751,10 +3103,6 @@
     <span class="card-timestamp">2026-10-23 · 20:31</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">im not seeing any shake</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>User couldn't see the v102 beat shake (14 px at ~1500 range). gears95.py (backup gears95_v102.py): per-beat shake with envelope exp(-7 tb). Vertical bounce 70 px at 6.5 Hz and sideways sway 38 px at 5 Hz, with the target at 0.3x so the camera rotates and doesn't just translate. Roll ±0.028 rad at 5.5 Hz, FOV punch -2.5° decaying exp(-12 tb).</p>
@@ -2782,10 +3130,6 @@
     <span class="card-timestamp">2026-10-23 · 20:39</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">make it a little bit more stronger plus the movement of the beat should be downwards</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>gears95.py (backup gears95_v103.py): beat hit is stronger and kicks DOWNWARD. dn = exp(-8 tb)*cos(2π·3.2 tb), so the first lobe goes down and the rebound is smaller. Eye drops 105 px and the target 175 px, so the camera nods down. Sway 30 px, roll ±0.034 rad, FOV punch -3.5° decaying exp(-12 tb).</p>
@@ -2811,10 +3155,6 @@
   <div class="card-header">
     <h2 class="card-title">105 · RLHF mask and a tempo ramp</h2>
     <span class="card-timestamp">2026-10-23 · 20:55</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">in rlhf goes askew scene the rlhf mask should appear there as well its up to you what u would do with that mask also after the askew spoken, before the scene end the bpm should start to increase like around 148 bpm and then the bpm should go back to 132 smoothly when the scene what did ilya see start / speed up the song as well as the visuals</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -2846,10 +3186,6 @@
     <span class="card-timestamp">2026-10-23 · 21:04</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">lower the bpm like only 142</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Tempo peak lowered to ~142.3 BPM, per the user's request for "only 142" (warp105.py SHIFT_F = 18, so DELTA = 0.6 s). The curve shape and the RLHF mask are unchanged from v105. The v105 version is kept as warp105_peak147.py and song_v105_peak147.wav.</p>
@@ -2877,10 +3213,6 @@
     <span class="card-timestamp">2026-10-23 · 21:08</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">remove the rlhf mask as well + fix the last IM UPPING MY PDOOM it appears right away in advance even the im is not spoken, time it correctly</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>RLHF mask removed (the call in rlhf105.py is commented out; the full mask version is kept in rlhf105_mask.py).</p>
@@ -2906,10 +3238,6 @@
   <div class="card-header">
     <h2 class="card-title">108 · Whole song at 136 bpm</h2>
     <span class="card-timestamp">2026-10-23 · 21:11</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">undo the 142 bpm and make the entire song bpm 136 bpm</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -2940,10 +3268,6 @@
     <span class="card-timestamp">2026-10-23 · 22:12</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">revert to original bpm plus the last IM UPPING MY PDOOM the IM still appears in advance even tho it is not yet spoken, fix it</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Reverted to the original 132 BPM: warp105.py is now the identity, and the audio is the original song.mp3. Older warps are kept as warp105_v107.py (142 ramp) and warp105_v108_136.py (uniform 136). 4701 frames again.</p>
@@ -2970,10 +3294,6 @@
   <div class="card-header">
     <h2 class="card-title">110 · Reward-hacking breakdown</h2>
     <span class="card-timestamp">2026-10-23 · 22:45</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">fix the rlhf goes askew scene there is a dead air like nothings happening after the camera pans to the right also improve and overhaul ilya scene</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -3004,10 +3324,6 @@
     <span class="card-timestamp">2026-10-23 · 23:12</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">undo the ilya scene, revert it to previous version of the scene then what i want you to do is to make that door more like a vault</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Ilya: the v110 corridor overhaul is reverted (it's still in ilya109.py but no longer used). vault110.py is the original s_vault (camera, question marks, [REDACTED] slam) with a real bank-vault door: a thick round steel door with a stepped face and bolt circle, a 4-spoke wheel that spins to unlock and back on the slam, locking bolts that retract before the swing and shoot home on the slam, hinge arms, and a round steel bezel with the square opening's corners filled in. The door opens wider (ang ~1.0 rad) so the gold interior glows through the round opening.</p>
@@ -3033,10 +3349,6 @@
   <div class="card-header">
     <h2 class="card-title">112 · Was it all for show, one climb</h2>
     <span class="card-timestamp">2026-10-23 · 23:36</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">in was it all for show scene, fix it like it abruptly just cuts to a SHOW word then the beat, make it like continous moving up like improve that scene</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -3066,10 +3378,6 @@
     <span class="card-timestamp">2026-10-23 · 23:50</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">u made it two controlling sticks,fix it plus i want it to look like a bomm effect after the show word is spoken</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>"Show" (show111.py; the v112 version is show111_v112.py): the second control bar and the strings above the bar are removed, back to the single original operator bar. The 139.79-140.24 darkness fade is replaced by a boom on the beat after "show?": a gold flash, a fireball, three shockwave rings, the bar shattering into 14 tumbling shards, sparks, the strings snapping, a hard camera kick, and the camera thrown back into the drop.</p>
@@ -3095,10 +3403,6 @@
   <div class="card-header">
     <h2 class="card-title">114 · Boom on the big hit</h2>
     <span class="card-timestamp">2026-10-24 · 00:36</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">awesome i like what u did but it broke down the snsapping early like time it correctly cause right now it broke down early</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -3128,10 +3432,6 @@
     <span class="card-timestamp">2026-10-24 · 05:49</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">make both connected like righjt now when the stick breaks it breaks on beat but then change instantly to the next scene cause both are different scenes, so what i want you to do is make the scenes both connected like when the sticks break it is up to you how u can smoothly connect the next scene like make it a continuous scene</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>"Show" into the drop is now one continuous shot. o_explode is merged into s_puppet2 (show111.py; the old files are show111_v114.py and s4c_v114.py). Its particles, cubes, rings and P(DOOM) = 1.000000 now grow out of the bar's blast centre CTR=(0,-2300,0) from BOOM=140.25. The camera recoils (140.48), pushes into the number (140.95), and orbits to 143.2 where o_globe starts. The lyric fades out 140.62-140.95. The 140.69 o_explode entry is removed from the TL, and the separate show shockwave rings are dropped.</p>
@@ -3157,10 +3457,6 @@
   <div class="card-header">
     <h2 class="card-title">116 · Von Neumann, fuse, paperclips and the terminal</h2>
     <span class="card-timestamp">2026-10-24 · 06:49</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">at the end in regenrate scene, instead of C: EARTH make it path macOS style plus my root name which is jnvhr in FUSE scene i want you to improve and overhaul the scene in VON NEUMAN, improve and overhaul the scene in paperclips fill the room, remove the character there in post chinchilla scene, once morph into a yelow cube the particles, the particles right now still visible there, fix it so that the yellow cube is only visbile in safety fence scene, improve and overhaul it in hundred thousand GPU scene improve and overhaul it as well in foretold by loom improve and overhaul it as well + improve the camera movement like cause right now it just pans from center left to right in masked pre-training days scene, improve and overhaul it as well, plus for the camera improve the movement like cause right now it just pans from center left to right in recursvie self upgrade scene improve it plus fix the captions position it is somewhat blocking the scene in was it all for show, the character there, revert to the characters initial version like it is only a stick character</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -3194,10 +3490,6 @@
     <span class="card-timestamp">2026-10-24 · 07:14</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">dont include this @MacBook-Pro /Users/jnvhr/Earth just like something like this ~/jnvhr %</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>End prompt shortened to "~/jnvhr % format complete" (s4c regen_ui). Chunk 4579-4701 re-rendered and spliced onto v116. 4701 frames.</p>
@@ -3222,10 +3514,6 @@
   <div class="card-header">
     <h2 class="card-title">118 · UPPING on time, boss and fuse overhauls</h2>
     <span class="card-timestamp">2026-10-24 · 12:39</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">in the last IM UPPING MY PDOOM scene, the UPPING is already spoken but it is not yet shown like it is delayed a little bit, fix it also improve and overhaul the boss in the im your servant and your my boss scene also there should be no bomb in the FUSE scene, i only want fuse also in hundred thousand gpu improve and overhaul it again also in breaking through each safety fence, improve and overhaul it as well</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -3259,10 +3547,6 @@
     <span class="card-timestamp">2026-10-24 · 13:24</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">in hundred thousands gpu it is ok now, the scene just doesnt looks like there is a hundred thusand gpu, improve and overhaul it again / improve and overhaul the breaking thpourhg each safety fence scene as well / improve and overhaul breaking through each safety fence and hundered thousand gpus</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Safety fences (117.14-119.05) overhauled in ov119.py:s_fences: a containment compound with four concentric chain-link fence rings (RLHF, RED TEAM, EVALS, KILL SWITCH: posts, rails, chain-link mesh, barbed coil, floodlights) around the gold cube from post-Chinchilla. On each hit (117.38/117.75/118.18/118.62) the cube grows, a ground shockwave expands and that ring's panels topple outward and fade, posts fly, sparks spray. The camera cranes up and back with every break and ends high overhead. Only the next fence is labelled, above the far side of its ring.</p>
@@ -3289,10 +3573,6 @@
   <div class="card-header">
     <h2 class="card-title">120 · New fences and GPU halls</h2>
     <span class="card-timestamp">2026-10-24 · 13:26</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">in the fence scene i just dont like what u did thatswhy i want an improved overhauled version again, same as the gpus scene</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -3324,10 +3604,6 @@
     <span class="card-timestamp">2026-10-24 · 13:45</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">awesome just improve the camera movement in the gpu scene</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>GPU camera (she asked for better camera movement): the Catmull path in v120 overshot, dipping to h=42 and whipping yaw -12 -&gt; +72 deg mid-rise with a speed spike. ov120.py:_gcam replaces it with one continuous, monotonic move: an accelerating dolly down the cold aisle; at 119.40 a crane up to h=2900 while drifting out to z=-1900 (bz starts at 119.58 so the camera clears the racks), panning right onto the campus (target blends aisle -&gt; (4700,0,3900)); a gentle bank roll (-0.07 sin) during the turn; and a slow drift after 120.35 so it never stops. Backup ov120_v120.py.</p>
@@ -3353,10 +3629,6 @@
   <div class="card-header">
     <h2 class="card-title">122 · Hundred thousand GPU on time</h2>
     <span class="card-timestamp">2026-10-24 · 14:09</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">the hundred thousdand gpu is late to appear like it is delayed like the hundred word is already spoken but the scene still not appears</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -3387,10 +3659,6 @@
     <span class="card-timestamp">2026-10-24 · 14:37</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">fix the line that goes around this sphere, it hould not be visible since it goes around the back of the sphere so fix it also the recursive self upgrade, i want you to improve and overhaul it, but dont render yet, show me first what will u do for that scene and once i confirm that is when u should start rendering / no what i mean is show me what u plan to do with improving and overhauling the recursive scene</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Globe ring (o_globe, 143.2-145.2): the back half of the orbit ring was drawn over the globe. The ring is now split per segment by camera depth against the globe centre: the back segments are drawn before F.draw (hidden by the globe) and the front ones after. Backup s4c_v122.py. Frames 4296-4355 spliced at keyframes 4296/4356. 4701 frames.</p>
@@ -3416,10 +3684,6 @@
   <div class="card-header">
     <h2 class="card-title">124 · Recursive self-upgrade dive</h2>
     <span class="card-timestamp">2026-10-24 · 14:54</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">i dont like it, improve and overhaul it again then show me first what you plan doing and wait for my confirmation to render / I like it but in the last window of that like it should be a continous path towards the ilya scene like ilya scene should already be visible there, dont render yet show it to me first / go render it now</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -3450,10 +3714,6 @@
     <span class="card-timestamp">2026-10-24 · 15:06</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">in recursive self upgrade scene, it should be continouos movement towards the ilya scene not a zoom in move per beat of the music, plus when it is about ilya scene, the camera like jitters/like stutters, fix it as well so that it smoothly go through that ilya scene</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Recursive: she wanted one continuous move, not a zoom per beat. rec124b._z is now a single closed-form velocity curve, v(u) = V0(1-u) + VE u + A u^2(1-u) (V0=0.4, VE=1.15 levels/s, integrating to KI levels). It speeds up and then settles into the hand-off. The beat flashes and punch are gone, streaks scale with zoom speed, and the centre path is geometric ((1-R^fr)/(1-R)) so nothing kinks at level crossings. Backup rec124b_v124.py.</p>
@@ -3482,10 +3742,6 @@
     <span class="card-timestamp">2026-10-24 · 15:19</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">remove this circular thingy at the center of recursive scene as well as the line strikes remove it as well i do not like it</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Recursive: removed the centre glow disc and the radial streak lines (she disliked both). Backup rec124b_v125.py. Frames 3859-3978 re-rendered (keyframes 3859/3979). 4701 frames.</p>
@@ -3510,10 +3766,6 @@
   <div class="card-header">
     <h2 class="card-title">127 · Loom on Just, ~/jnvhr%</h2>
     <span class="card-timestamp">2026-10-24 · 15:26</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">in just as foretold by loom scene, the just is already spoken but the scene of it is not yet shown, fix it so it appears timely also the ~/jnvhr % it has space, make it this instead ~/jnvhr%</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -3544,10 +3796,6 @@
     <span class="card-timestamp">2026-10-24 · 15:38</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">in this the text goes not embedded to the rectangles, is it that way? or a mistake?</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Stack overflow (o_stack, 149.2-151.0): the "frame #N  upgrade()" labels stayed at x=0 while the tower toppled, so they floated off the slabs. They now ride each slab front face (centre + rot3 by the same tilt). Backup s4c_v127.py. Frames 4466-4529 re-rendered (keyframes 4466/4530). 4701 frames.</p>
@@ -3572,10 +3820,6 @@
   <div class="card-header">
     <h2 class="card-title">129 · Every fence breaks on a beat</h2>
     <span class="card-timestamp">2026-10-24 · 15:41</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">in breaking through each safety fence, time it to every beat like it shiuld break each fence there every beat like it is still continous movement but it should be timed to the beat</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -3604,10 +3848,6 @@
     <span class="card-timestamp">2026-10-24 · 15:49</span>
   </div>
   <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">fix this circular in youy my boss sccene it is appearing on top of all the elements, fix it so it is only at the back of the boss</div>
-  </div>
-  <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
     <div class="decision-content">
       <p>Boss scene (ov118.s_servant): the gyroscopic crown rings and ticks were drawn after F.draw, so they sat on top of the colossus. Now the draw order is backdrop/throne -&gt; crown -&gt; colossus, so the boss hides the rings. Backup ov118_v129.py. Frames 392-501 re-rendered (keyframes 392/502). 4701 frames.</p>
@@ -3632,10 +3872,6 @@
   <div class="card-header">
     <h2 class="card-title">131 · Production master at 60fps</h2>
     <span class="card-timestamp">2026-10-24 · 15:57</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">remove the yellow dot blinking in here also render the video now in 1080p 60 fps, it is ready for production now</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -3664,10 +3900,6 @@
   <div class="card-header">
     <h2 class="card-title">132 · Audio visualizer removed, final master</h2>
     <span class="card-timestamp">2026-10-24 · 17:05</span>
-  </div>
-  <div class="field-group">
-    <div class="field-label">USER PROMPT</div>
-    <div class="prompt-box">remove this audio visualizer, render again in 1080p 60 fps</div>
   </div>
   <div class="field-group">
     <div class="field-label">LOG ENTRY</div>
@@ -3924,7 +4156,7 @@
           emptyAction.hidden = true;
         } else {
           $('#empty-title').textContent = 'Nothing matches that search';
-          $('#empty-body').textContent = 'Try a file name, a word from the prompt, or part of a decision.';
+          $('#empty-body').textContent = 'Try a scene, a file name, or part of a decision.';
           emptyAction.hidden = false;
         }
       }
